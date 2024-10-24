@@ -70,7 +70,7 @@ export function ChatLayout({
     if (client === null) {
       const setSocket = async () => {
         const C = new StompJs.Client({
-          brokerURL: "ws://localhost:7002/ws-stomp",
+          brokerURL: "ws://43.200.53.153:7002/ws-stomp",
           connectHeaders: {
             Authorization: `Bearer ${authCookie}`,
           },
